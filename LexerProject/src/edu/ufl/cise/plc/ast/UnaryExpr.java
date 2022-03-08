@@ -7,11 +7,12 @@ public class UnaryExpr extends Expr {
 	final IToken op;
 	final Expr e;
 
-	public UnaryExpr(IToken firstToken, IToken op, Expr e) { // token, first token, everything after
+	public UnaryExpr(IToken firstToken, IToken op, Expr e) {
 		super(firstToken);
 		this.op = op;
 		this.e = e;
 	}
+
 	public IToken getOp() {
 		return op;
 	}
